@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="الخدمات البرمجية والتقنية المقدمة من Mo_Nassar">
+  <title>خدماتنا | Mo_Nassar - حلول برمجية متكاملة</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Bootstrap 5 RTL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome للأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts - Tajawal -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- ملف التنسيقات الخاص -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    :root {
+      --primary-color: #3498db;
+      --secondary-color: #2c3e50;
+      --accent-color: #e74c3c;
+    }
+    
+    body {
+      font-family: 'Tajawal', sans-serif;
+      line-height: 1.8;
+    }
+    
+    .hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/services-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+      color: white;
+    }
+    
+    .service-card {
+      transition: all 0.3s ease;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      height: 100%;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    
+    .service-icon {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .nav-link {
+      position: relative;
+      padding: 8px 15px;
+    }
+    
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      right: 0;
+      background-color: var(--primary-color);
+      transition: width 0.3s;
+    }
+    
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      padding: 10px 25px;
+    }
+    
+    .btn-outline-light:hover {
+      color: var(--secondary-color);
+    }
+    
+    .feature-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .feature-list li {
+      padding: 5px 0;
+      position: relative;
+      padding-right: 25px;
+    }
+    
+    .feature-list li::before {
+      content: '\f00c';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      right: 0;
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header class="bg-dark text-white py-3 sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="index.html">
+            <i class="fas fa-code me-2"></i>Mo_Nassar
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="services.html">الخدمات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">أعمالنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">عنّا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a href="tel:+201200902064" class="btn btn-outline-light me-2">
+                <i class="fas fa-phone me-1"></i> اتصل بنا
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- عنوان الصفحة -->
+  <section class="hero-section">
+    <div class="container text-center animate_animated animate_fadeIn">
+      <h1 class="display-4 fw-bold mb-3">خدماتنا الاحترافية</h1>
+      <p class="lead mb-4">حلول تقنية متكاملة مصممة خصيصًا لتحقيق أهداف عملك</p>
+      <a href="#services" class="btn btn-primary btn-lg">
+        <i class="fas fa-arrow-down me-2"></i> استكشف خدماتنا
+      </a>
+    </div>
+  </section>
+
+  <!-- محتوى الخدمات -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">حلولنا البرمجية</h2>
+        <p class="lead text-muted">نقدم مجموعة متكاملة من الخدمات التقنية عالية الجودة</p>
+      </div>
+      
+      <div class="row g-4">
+        <!-- خدمة 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card card">
+            <div class="card-body p-4">
+              <div class="text-center">
+                <i class="fas fa-globe service-icon"></i>
+                <h4 class="card-title mb-3">تصميم وتطوير مواقع الويب</h4>
+              </div>
+              <p class="card-text">تصميم وتطوير مواقع احترافية متكاملة تلبي احتياجات عملك:</p>
+              <ul class="feature-list">
+                <li>مواقع شركات وتقديمية</li>
+                <li>متاجر إلكترونية متكاملة</li>
+                <li>بوابات إخبارية وتعليمية</li>
+                <li>أنظمة إدارة المحتوى (CMS)</li>
+                <li>مواقع شخصية ومهنية</li>
+              </ul>
+              <div class="text-center mt-4">
+                <a href="service-web.html" class="btn btn-outline-primary">تفاصيل الخدمة</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- خدمة 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card card">
+            <div class="card-body p-4">
+              <div class="text-center">
+                <i class="fas fa-mobile-alt service-icon"></i>
+                <h4 class="card-title mb-3">تطوير تطبيقات الموبايل</h4>
+              </div>
+              <p class="card-text">بناء تطبيقات عالية الجودة لأنظمة Android و iOS:</p>
+              <ul class="feature-list">
+                <li>تطبيقات باستخدام Flutter و React Native</li>
+                <li>تطبيقات الأعمال والخدمات</li>
+                <li>تطبيقات التواصل الاجتماعي</li>
+                <li>تطبيقات الألعاب البسيطة</li>
+                <li>تكامل مع خدمات الويب</li>
+              </ul>
+              <div class="text-center mt-4">
+                <a href="service-mobile.html" class="btn btn-outline-primary">تفاصيل الخدمة</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- خدمة 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card card">
+            <div class="card-body p-4">
+              <div class="text-center">
+                <i class="fas fa-cogs service-icon"></i>
+                <h4 class="card-title mb-3">أنظمة إدارة الأعمال</h4>
+              </div>
+              <p class="card-text">أنظمة مخصصة لإدارة وتنظيم عملك بكفاءة:</p>
+              <ul class="feature-list">
+                <li>أنظمة إدارة الموارد (ERP)</li>
+                <li>أنظمة إدارة العملاء (CRM)</li>
+                <li>أنظمة إدارة الموارد البشرية</li>
+                <li>أنظمة المحاسبة والمالية</li>
+                <li>لوحات تحكم متكاملة</li>
+              </ul>
+              <div class="text-center mt-4">
+                <a href="service-erp.html" class="btn btn-outline-primary">تفاصيل الخدمة</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- خدمة 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card card">
+            <div class="card-body p-4">
+              <div class="text-center">
+                <i class="fas fa-paint-brush service-icon"></i>
+                <h4 class="card-title mb-3">تصميم واجهات المستخدم</h4>
+              </div>
+              <p class="card-text">تصميم تجربة مستخدم مميزة لواجهات التطبيقات والمواقع:</p>
+              <ul class="feature-list">
+                <li>تصميم UI/UX احترافي</li>
+                <li>إنشاء نماذج أولية (Prototypes)</li>
+                <li>تحسين تجربة المستخدم</li>
+                <li>تصميم وفق معايير الوصول</li>
+                <li>اختبارات سهولة الاستخدام</li>
+              </ul>
+              <div class="text-center mt-4">
+                <a href="service-ui.html" class="btn btn-outline-primary">تفاصيل الخدمة</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- خدمة 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card card">
+            <div class="card-body p-4">
+              <div class="text-center">
+                <i class="fas fa-shield-alt service-icon"></i>
+                <h4 class="card-title mb-3">الأمن السيبراني</h4>
+              </div>
+              <p class="card-text">حلول أمنية لحماية أنظمتك وبياناتك:</p>
+              <ul class="feature-list">
+                <li>اختبارات اختراق المواقع</li>
+                <li>تأمين قواعد البيانات</li>
+                <li>حماية من هجمات DDoS</li>
+                <li>فحص الثغرات الأمنية</li>
+                <li>تدريب على الأمن السيبراني</li>
+              </ul>
+              <div class="text-center mt-4">
+                <a href="service-security.html" class="btn btn-outline-primary">تفاصيل الخدمة</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- خدمة 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card card">
+            <div class="card-body p-4">
+              <div class="text-center">
+                <i class="fas fa-server service-icon"></i>
+                <h4 class="card-title mb-3">استضافة وصيانة المواقع</h4>
+              </div>
+              <p class="card-text">حلول استضافة متكاملة مع صيانة دورية:</p>
+              <ul class="feature-list">
+                <li>استضافة مواقع عالية الأداء</li>
+                <li>صيانة وتحديثات دورية</li>
+                <li>نسخ احتياطي تلقائي</li>
+                <li>مراقبة الأداء 24/7</li>
+                <li>دعم فني متواصل</li>
+              </ul>
+              <div class="text-center mt-4">
+                <a href="service-hosting.html" class="btn btn-outline-primary">تفاصيل الخدمة</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- عملية العمل -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">كيف نعمل؟</h2>
+        <p class="lead text-muted">خطوات واضحة لضمان نجاح مشروعك</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0 bg-transparent text-center">
+            <div class="card-body">
+              <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                <h4 class="m-0">1</h4>
+              </div>
+              <h5 class="card-title">التحليل والتخطيط</h5>
+              <p class="card-text text-muted">نفهم احتياجاتك ونضع خطة عمل مفصلة</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0 bg-transparent text-center">
+            <div class="card-body">
+              <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                <h4 class="m-0">2</h4>
+              </div>
+              <h5 class="card-title">التصميم والنمذجة</h5>
+              <p class="card-text text-muted">نصمم واجهات ونماذج أولية للموافقة</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0 bg-transparent text-center">
+            <div class="card-body">
+              <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                <h4 class="m-0">3</h4>
+              </div>
+              <h5 class="card-title">التطوير والتنفيذ</h5>
+              <p class="card-text text-muted">نطور الحل التقني وفق أحدث المعايير</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0 bg-transparent text-center">
+            <div class="card-body">
+              <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                <h4 class="m-0">4</h4>
+              </div>
+              <h5 class="card-title">التسليم والدعم</h5>
+              <p class="card-text text-muted">نسلم المشروع مع دعم فني مستمر</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- تواصل -->
+  <section class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 mb-4 mb-lg-0">
+          <h3 class="fw-bold mb-3">جاهزون لبدء مشروعك؟</h3>
+          <p class="lead mb-0">تواصل معنا الآن واحصل على استشارة مجانية</p>
+        </div>
+        <div class="col-lg-4 text-lg-start">
+          <div class="d-flex flex-column flex-lg-row gap-3">
+            <a href="contact.html" class="btn btn-light btn-lg flex-grow-1">
+              <i class="fas fa-envelope me-2"></i> راسلنا
+            </a>
+            <a href="tel:+201200902064" class="btn btn-outline-light btn-lg flex-grow-1">
+              <i class="fas fa-phone me-2"></i> اتصل بنا
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+ <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="text-white mb-4"><i class="fas fa-code me-2"></i>Mo_Nassar</h5>
+          <p class="text-muted">نحن شريكك الموثوق في رحلة التحول الرقمي. نقدم حلولًا برمجية مبتكرة تساعد عملك على النمو والازدهار.</p>
+          <div class="social-icons mt-4">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/share/1AzK1zXKXx/?mibextid=wwXIfr" target="_blank" class="btn btn-outline-dark ms-2">
+        <i class="bi bi-facebook"></i> فيسبوك
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+               <a href="https://www.instagram.com/mo_nassar_1x?igsh=MXB2bHAwamNjMnUyeQ%3D%3D&utm_source=qr" target="_blank" class="btn btn-outline-danger ms-2">
+        <i class="bi bi-instagram"></i> إنستجرام
+      </a>
+           <a href="https://wa.me/201200902064" target="_blank" class="btn btn-outline-success ms-2">
+        <i class="bi bi-whatsapp"></i> واتساب
+      </a>
+         </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6 class="text-white mb-4">روابط سريعة</h6>
+          <ul class="list-unstyled footer-links">
+            <li class="mb-2"><a href="index.html">الرئيسية</a></li>
+            <li class="mb-2"><a href="about.html">عن الشركة</a></li>
+            <li class="mb-2"><a href="services.html">الخدمات</a></li>
+            <li class="mb-2"><a href="portfolio.html">أعمالنا</a></li>
+            <li class="mb-2"><a href="blog.html">المدونة</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h6 class="text-white mb-4">خدماتنا</h6>
+          <ul class="list-unstyled footer-links">
+            <li class="mb-2"><a href="#">تطوير مواقع الويب</a></li>
+            <li class="mb-2"><a href="#">تطبيقات الموبايل</a></li>
+            <li class="mb-2"><a href="#">أنظمة الأعمال</a></li>
+            <li class="mb-2"><a href="#">التجارة الإلكترونية</a></li>
+            <li class="mb-2"><a href="#">استضافة المواقع</a></li>
+            <li><a href="#">الصيانة والدعم</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5 class="mb-4">تواصل معنا</h5>
+          <ul class="list-unstyled text-white-50">
+            <li class="mb-3"><i class="fas fa-map-marker-alt me-2 text-primary"></i> القاهرة، مصر</li>
+            <li class="mb-3"><i class="fas fa-phone me-2 text-primary"></i> +201200902064</li>
+            <li class="mb-3"><i class="fas fa-envelope me-2 text-primary"></i> info.mo.nassar@gmail.com</li>
+            <li><i class="fas fa-clock me-2 text-primary"></i> الأحد - الخميس: 8 ص - 5 م</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4 bg-secondary">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0 text-muted">© 2024 Mo_Nassar. جميع الحقوق محفوظة.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="mb-0 text-muted">تصميم وتطوير <a href="index.html" class="text-white">Mo_Nassar</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="btn btn-primary btn-lg back-to-top position-fixed" style="bottom: 20px; left: 20px; display: none;">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- ملف JS الخاص -->
+  <script src="js/main.js"></script>
+  
+  <script>
+    // Back to top button
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 300) {
+        $('.back-to-top').fadeIn('slow');
+      } else {
+        $('.back-to-top').fadeOut('slow');
+      }
+    });
+    
+    $('.back-to-top').click(function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop: 0}, 500);
+      return false;
+    });
+    
+    // Animation on scroll
+    $(document).ready(function() {
+      $('.service-card').each(function(i) {
+        $(this).delay(i * 200).queue(function() {
+          $(this).addClass('animate_animated animate_fadeInUp').dequeue();
+        });
+      });
+    });
+  </script>
+</body>
+</html>

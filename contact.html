@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>تواصل معنا | Mo_Nassar</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    :root {
+      --primary-color: #3498db;
+      --secondary-color: #2c3e50;
+    }
+    
+    .contact-banner {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      background-size: cover;
+    }
+    
+    .contact-form {
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .social-btn {
+      transition: all 0.3s ease;
+      border-width: 2px;
+    }
+    
+    .social-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      z-index: 99;
+      opacity: 0;
+      transition: all 0.3s;
+    }
+    
+    .back-to-top.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header class="bg-dark text-white py-3 sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h4 m-0">
+        <i class="bi bi-code-slash me-2"></i>Mo_Nassar
+      </h1>
+      <nav class="d-none d-md-block">
+        <a href="index.html" class="text-white ms-3">الرئيسية</a>
+        <a href="services.html" class="text-white ms-3">الخدمات</a>
+        <a href="portfolio.html" class="text-white ms-3">أعمالنا</a>
+        <a href="about.html" class="text-white ms-3">من نحن</a>
+        <a href="contact.html" class="text-white">تواصل معنا</a>
+      </nav>
+      <a href="tel:+201200902064" class="btn btn-outline-light d-md-none">
+        <i class="bi bi-telephone"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- بانر -->
+  <section class="contact-banner text-white text-center py-5">
+    <div class="container">
+      <h2 class="animate_animated animate_fadeInDown">تواصل معنا</h2>
+      <p class="lead animate_animated animatefadeInUp animate_delay-1s">في خدمتك دائمًا لأي استفسار أو تعاون</p>
+    </div>
+  </section>
+
+  <!-- نموذج التواصل -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form class="contact-form p-4 p-md-5" id="contactForm">
+            <h3 class="text-center mb-4">أرسل رسالتك</h3>
+            
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">الاسم الكامل</label>
+                <input type="text" class="form-control" id="name" placeholder="أدخل اسمك" required>
+              </div>
+              
+              <div class="col-md-6">
+                <label for="email" class="form-label">البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="email" placeholder="example@mail.com" required>
+              </div>
+              
+              <div class="col-12">
+                <label for="phone" class="form-label">رقم الهاتف</label>
+                <input type="tel" class="form-control" id="phone" placeholder="+201200902064">
+              </div>
+              
+              <div class="col-12">
+                <label for="subject" class="form-label">الموضوع</label>
+                <select class="form-select" id="subject">
+                  <option value="استفسار">استفسار</option>
+                  <option value="مقترح">مقترح</option>
+                  <option value="دعم فني">دعم فني</option>
+                  <option value="تعاون">تعاون</option>
+                </select>
+              </div>
+              
+              <div class="col-12">
+                <label for="message" class="form-label">الرسالة</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+              </div>
+              
+              <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-primary px-5 py-2">
+                  <i class="bi bi-send me-2"></i>إرسال الرسالة
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- معلومات التواصل -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4 text-center">
+          <div class="p-4 bg-white rounded shadow-sm">
+            <i class="bi bi-telephone text-primary fs-1 mb-3"></i>
+            <h4>اتصل بنا</h4>
+            <p class="mb-2">+201200902064</p>
+            <a href="tel:+201200902064" class="btn btn-outline-primary mt-2">
+              <i class="bi bi-telephone me-2"></i>اتصال سريع
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-md-4 text-center">
+          <div class="p-4 bg-white rounded shadow-sm">
+            <i class="bi bi-envelope text-primary fs-1 mb-3"></i>
+            <h4>البريد الإلكتروني</h4>
+            <p class="mb-2">info.mo.nassar@gmail.com</p>
+            <a href="mailto:info.mo.nassar@gmail.com" class="btn btn-outline-primary mt-2">
+              <i class="bi bi-envelope me-2"></i>إرسال بريد
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-md-4 text-center">
+          <div class="p-4 bg-white rounded shadow-sm">
+            <i class="bi bi-clock text-primary fs-1 mb-3"></i>
+            <h4>ساعات العمل</h4>
+            <p class="mb-2">الأحد - الخميس</p>
+            <p>9 صباحًا - 5 مساءً</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- روابط التواصل -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h3 class="mb-4">تابعنا على منصات التواصل</h3>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="https://www.facebook.com/share/1AzK1zXKXx/?mibextid=wwXIfr" target="_blank" class="social-btn btn btn-outline-primary">
+          <i class="bi bi-facebook me-2"></i>فيسبوك
+        </a>
+        <a href="https://wa.me/201200902064" target="_blank" class="social-btn btn btn-outline-success">
+          <i class="bi bi-whatsapp me-2"></i>واتساب
+        </a>
+        <a href="https://www.instagram.com/mo_nassar_1x?igsh=MXB2bHAwamNjMnUyeQ%3D%3D&utm_source=qr" target="_blank" class="social-btn btn btn-outline-danger">
+          <i class="bi bi-instagram me-2"></i>إنستجرام
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" class="social-btn btn btn-outline-info">
+          <i class="bi bi-linkedin me-2"></i>لينكدإن
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="m-0">© 2025 Mo_Nassar - جميع الحقوق محفوظة</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+          <a href="mailto:info.mo.nassar@gmail.com" class="text-white text-decoration-none">
+            <i class="bi bi-envelope me-2"></i>info.mo.nassar@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر الرجوع لأعلى -->
+  <a href="#" class="back-to-top btn btn-primary">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // زر الرجوع لأعلى
+    window.addEventListener('scroll', function() {
+      const backToTopBtn = document.querySelector('.back-to-top');
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+
+    // إرسال النموذج
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // هنا يمكنك إضافة كود إرسال النموذج عبر AJAX
+      alert('تم إرسال رسالتك بنجاح! سنتواصل معك قريبًا.');
+      this.reset();
+      
+      // يمكنك إضافة تحريك للصفحة للأعلى بعد الإرسال
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // تأكيد أن جميع روابط الاتصال تستخدم الرقم الصحيح
+    document.querySelectorAll('[href^="tel:"]').forEach(link => {
+      link.href = 'tel:+201200902064';
+    });
+
+    // تأكيد أن روابط الواتساب تستخدم الرقم الصحيح
+    document.querySelectorAll('[href^="https://wa.me/"]').forEach(link => {
+      link.href = 'https://wa.me/201200902064';
+    });
+  </script>
+</body>
+</html>

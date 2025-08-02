@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="شركة متخصصة في تطوير المواقع والتطبيقات وحلول الأعمال الرقمية">
+  <title>Mo_Nassar | حلول رقمية متكاملة</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Bootstrap 5 RTL CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome للأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts - Tajawal -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Animate.css للحركات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- ملف التنسيقات الخاص -->
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #3498db;
+      --accent-color: #e74c3c;
+    }
+    
+    body {
+      font-family: 'Tajawal', sans-serif;
+      line-height: 1.8;
+    }
+    
+    .hero-section {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/hero-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 0;
+    }
+    
+    .service-card {
+      transition: transform 0.3s;
+      border: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .nav-link {
+      position: relative;
+      padding: 8px 15px;
+    }
+    
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      right: 0;
+      background-color: var(--secondary-color);
+      transition: width 0.3s;
+    }
+    
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    
+    .btn-primary {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+    }
+    
+    .stats-section {
+      background-color: var(--primary-color);
+      color: white;
+    }
+    
+    .stat-item {
+      padding: 30px 0;
+    }
+    
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    
+    .testimonial-card {
+      border-left: 4px solid var(--secondary-color);
+    }
+    
+    .footer-links a {
+      color: #ddd;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+      color: var(--secondary-color);
+    }
+    
+    .social-icons a {
+      color: white;
+      font-size: 1.2rem;
+      margin-left: 15px;
+      transition: color 0.3s;
+    }
+    
+    .social-icons a:hover {
+      color: var(--secondary-color);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header class="bg-dark text-white py-3 sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="index.html">
+            <i class="fas fa-code me-2"></i>Mo_Nassar
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">الخدمات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">أعمالنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">عن الشركة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">المدونة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a href="tel:+201200902064" class="btn btn-outline-light me-2">
+                <i class="fas fa-phone me-1"></i> اتصل بنا
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- بانر ترحيبي -->
+  <section class="hero-section">
+    <div class="container text-center animate_animated animate_fadeIn">
+      <h1 class="display-4 fw-bold mb-4">حلول برمجية تواكب تطلعات عملك</h1>
+      <p class="lead mb-5">نحول أفكارك إلى واقع رقمي باستخدام أحدث التقنيات وأفضل الممارسات</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="contact.html" class="btn btn-primary btn-lg px-4">
+          <i class="fas fa-paper-plane me-2"></i> ابدأ مشروعك الآن
+        </a>
+        <a href="#services" class="btn btn-outline-light btn-lg px-4">
+          <i class="fas fa-search me-2"></i> استكشف خدماتنا
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- إحصائيات -->
+  <section class="stats-section py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3 col-6 stat-item">
+          <div class="stat-number">150+</div>
+          <div class="stat-label">مشروع مكتمل</div>
+        </div>
+        <div class="col-md-3 col-6 stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">عميل راضٍ</div>
+        </div>
+        <div class="col-md-3 col-6 stat-item">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">سنوات خبرة</div>
+        </div>
+        <div class="col-md-3 col-6 stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">دعم فني</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- من نحن -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="images/about-us.jpg" class="img-fluid rounded shadow" alt="فريق العمل">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="mb-4 fw-bold">من نحن</h2>
+          <p class="lead">Mo_Nassar هي شريكك التقني الموثوق لتطوير حلول رقمية مبتكرة تواكب متطلبات العصر.</p>
+          <p>تأسست شركتنا عام 2010 بمجموعة صغيرة من المطورين المتحمسين، واليوم نمتلك فريقًا من الخبراء في مختلف مجالات التكنولوجيا والبرمجة. نؤمن بأن نجاح عملائنا هو نجاح لنا، لذلك نقدم حلولًا مخصصة تلبي احتياجات كل عميل على حدة.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> فريق من الخبراء ذوي الكفاءة العالية</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> منهجية عمل واضحة وشفافة</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> دعم فني متواصل بعد التسليم</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> أسعار تنافسية مع جودة لا تقبل المساومة</li>
+          </ul>
+          <a href="about.html" class="btn btn-outline-primary mt-3">المزيد عنا</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- خدماتنا -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">خدماتنا</h2>
+        <p class="lead text-muted">نقدم مجموعة متكاملة من الحلول البرمجية لجميع احتياجاتك الرقمية</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card card h-100">
+            <div class="card-body text-center p-4">
+              <div class="icon-box bg-primary bg-opacity-10 text-primary rounded-circle p-3 mb-4 mx-auto" style="width: 70px; height: 70px;">
+                <i class="fas fa-laptop-code fs-3"></i>
+              </div>
+              <h4 class="card-title mb-3">تطوير مواقع الويب</h4>
+              <p class="card-text text-muted">تصميم وتطوير مواقع احترافية متوافقة مع جميع الأجهزة، سريعة التحميل، ومحسنة لمحركات البحث SEO.</p>
+              <ul class="list-unstyled text-start text-muted">
+                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> مواقع شركات</li>
+                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> متاجر إلكترونية</li>
+                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> بوابات إخبارية</li>
+                <li><i class="fas fa-check text-primary me-2"></i> أنظمة إدارة المحتوى</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card card h-100">
+            <div class="card-body text-center p-4">
+              <div class="icon-box bg-success bg-opacity-10 text-success rounded-circle p-3 mb-4 mx-auto" style="width: 70px; height: 70px;">
+                <i class="fas fa-mobile-alt fs-3"></i>
+              </div>
+              <h4 class="card-title mb-3">تطبيقات الموبايل</h4>
+              <p class="card-text text-muted">بناء تطبيقات أندرويد وiOS ذات أداء عالي وتجربة مستخدم ممتازة باستخدام أحدث التقنيات.</p>
+              <ul class="list-unstyled text-start text-muted">
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> تطبيقات الأعمال</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> تطبيقات التواصل</li>
+                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> تطبيقات الألعاب</li>
+                <li><i class="fas fa-check text-success me-2"></i> تطبيقات الهوية المؤسسية</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card card h-100">
+            <div class="card-body text-center p-4">
+              <div class="icon-box bg-danger bg-opacity-10 text-danger rounded-circle p-3 mb-4 mx-auto" style="width: 70px; height: 70px;">
+                <i class="fas fa-cogs fs-3"></i>
+              </div>
+              <h4 class="card-title mb-3">أنظمة الأعمال</h4>
+              <p class="card-text text-muted">تطوير أنظمة مخصصة لإدارة عملك بكفاءة عالية وتكامل مع مختلف أقسام المؤسسة.</p>
+              <ul class="list-unstyled text-start text-muted">
+                <li class="mb-2"><i class="fas fa-check text-danger me-2"></i> أنظمة ERP</li>
+                <li class="mb-2"><i class="fas fa-check text-danger me-2"></i> أنظمة CRM</li>
+                <li class="mb-2"><i class="fas fa-check text-danger me-2"></i> أنظمة الموارد البشرية</li>
+                <li><i class="fas fa-check text-danger me-2"></i> أنظمة المحاسبة</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="services.html" class="btn btn-primary px-4">عرض جميع الخدمات</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- لماذا نحن -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">لماذا تختارنا؟</h2>
+        <p class="lead text-muted">نقدم قيمة مضافة لا تجدها عند الآخرين</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-medal text-warning fs-1 mb-3"></i>
+              <h5 class="card-title">جودة لا تقبل المساومة</h5>
+              <p class="card-text text-muted">نلتزم بأعلى معايير الجودة في كل مشروع ننفذه، بدءًا من التحليل وحتى التسليم.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-clock text-info fs-1 mb-3"></i>
+              <h5 class="card-title">التسليم في الموعد</h5>
+              <p class="card-text text-muted">نحرص على تسليم المشاريع في الوقت المتفق عليه دون تأخير أو أعذار.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-lock text-success fs-1 mb-3"></i>
+              <h5 class="card-title">حماية وأمان</h5>
+              <p class="card-text text-muted">نضمن حماية بياناتك وخصوصيتها باستخدام أحدث تقنيات الأمان الرقمي.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-headset text-primary fs-1 mb-3"></i>
+              <h5 class="card-title">دعم فني دائم</h5>
+              <p class="card-text text-muted">فريق الدعم الفني لدينا جاهز لمساعدتك على مدار الساعة طوال أيام الأسبوع.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- أعمالنا -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">أعمالنا</h2>
+      <p class="lead text-muted">أبرز المشاريع التي نفخر بها</p>
+    </div>
+    <div class="row g-4">
+      <!-- المشروع العقاري -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+               class="card-img-top"
+               alt="موقع شركة عقارية حقيقي"
+               style="height: 200px; object-fit: cover;"
+               onerror="this.src='https://images.unsplash.com/photo-1554469384-e58fac16e23a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'">
+          <div class="card-body">
+            <div class="badge bg-primary mb-2">ويب</div>
+            <h5 class="card-title">منصة عقارية متكاملة</h5>
+            <p class="card-text text-muted">نظام حجز وعرض وحدات سكنية مع جولات افتراضية 360°.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="#" class="btn btn-sm btn-outline-primary">عرض التفاصيل</a>
+              <small class="text-muted">تم الإنشاء: يناير 2025</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- التطبيق الطبي -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+               class="card-img-top"
+               alt="تطبيق طبي حقيقي"
+               style="height: 200px; object-fit: cover;"
+               onerror="this.src='https://images.unsplash.com/photo-1581093450021-4a7360e9a7d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'">
+          <div class="card-body">
+            <div class="badge bg-success mb-2">موبايل</div>
+            <h5 class="card-title">تطبيق العيادة الذكية</h5>
+            <p class="card-text text-muted">نظام متكامل لإدارة المواعيد والسجلات الطبية مع توثيق طبي آمن.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="#" class="btn btn-sm btn-outline-success">عرض التفاصيل</a>
+              <small class="text-muted">تم الإنشاء: مارس 2025</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- نظام المدارس -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+               class="card-img-top"
+               alt="نظام إدارة مدرسي حقيقي"
+               style="height: 200px; object-fit: cover;"
+               onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'">
+          <div class="card-body">
+            <div class="badge bg-info mb-2">نظام إدارة</div>
+            <h5 class="card-title">نظام إدارة المدارس</h5>
+            <p class="card-text text-muted">حل متكامل يشمل الحضور والغياب، الدرجات، والمناهج الدراسية.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="#" class="btn btn-sm btn-outline-info">عرض التفاصيل</a>
+              <small class="text-muted">تم الإنشاء: مايو 2025</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="#" class="btn btn-primary px-4">عرض جميع الأعمال</a>
+    </div>
+  </div>
+</section>
+
+ <!-- آراء العملاء -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">آراء عملائنا</h2>
+      <p class="lead text-muted">ما يقوله عملاؤنا عن تجربتهم معنا</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card card h-100 border-0 shadow-sm p-4">
+          <div class="card-body">
+            <div class="d-flex mb-3">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3" width="60" height="60" alt="عميل">
+              <div>
+                <h6 class="mb-0">أحمد السيد</h6>
+                <small class="text-muted">مدير تسويق - شركة التقنية</small>
+              </div>
+            </div>
+            <p class="card-text">"لقد تفاجأت بمستوى الاحترافية في التعامل وجودة العمل المقدم. فريق العمل كان دائمًا متجاوبًا ومستعدًا لتنفيذ أي تعديلات مطلوبة."</p>
+            <div class="rating text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card card h-100 border-0 shadow-sm p-4">
+          <div class="card-body">
+            <div class="d-flex mb-3">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-3" width="60" height="60" alt="عميل">
+              <div>
+                <h6 class="mb-0">سارة محمد</h6>
+                <small class="text-muted">مالكة متجر إلكتروني</small>
+              </div>
+            </div>
+            <p class="card-text">"المتجر الإلكتروني الذي قاموا بتطويره لنا ساعد في زيادة مبيعاتنا بنسبة 200% خلال الأشهر الثلاثة الأولى. التصميم سهل الاستخدام والوظائف ممتازة."</p>
+            <div class="rating text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card card h-100 border-0 shadow-sm p-4">
+          <div class="card-body">
+            <div class="d-flex mb-3">
+              <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle me-3" width="60" height="60" alt="عميل">
+              <div>
+                <h6 class="mb-0">خالد عبدالله</h6>
+                <small class="text-muted">مدير عام - مؤسسة تعليمية</small>
+              </div>
+            </div>
+            <p class="card-text">"نظام إدارة المدارس الذي طوروه لنا غيّر طريقة عملنا بالكامل. وفر الوقت والجهد وسهل متابعة الطلاب والمعلمين. ننصح بهم بشدة."</p>
+            <div class="rating text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- تواصل -->
+  <section class="bg-primary text-white py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h2 class="fw-bold mb-3">جاهزون لبدء مشروعك؟</h2>
+          <p class="lead mb-0">تواصل معنا الآن واحصل على استشارة مجانية من خبرائنا</p>
+        </div>
+        <div class="col-lg-5 text-lg-end">
+          <a href="contact.html" class="btn btn-light btn-lg px-4 me-2">
+            <i class="fas fa-envelope me-2"></i> راسلنا
+          </a>
+          <a href="tel:+201200902064" class="btn btn-outline-light btn-lg px-4">
+            <i class="fas fa-phone me-2"></i> اتصل بنا
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- أحدث مقالاتنا -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">أحدث مقالاتنا</h2>
+      <p class="lead text-muted">آخر الأخبار والنصائح في عالم البرمجة والتكنولوجيا</p>
+    </div>
+    <div class="row g-4">
+      <!-- المقال 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+               class="card-img-top" 
+               alt="تطوير الويب"
+               style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-2">
+              <small class="text-muted"><i class="far fa-calendar-alt me-2"></i> 15 يونيو 2025</small>
+              <small class="text-muted"><i class="fas fa-tag me-2"></i> تطوير الويب</small>
+            </div>
+            <h5 class="card-title">أهم اتجاهات تطوير الويب</h5>
+            <p class="card-text text-muted">أحدث التقنيات والممارسات في عالم تطوير الويب لهذا العام.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">قراءة المزيد</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- المقال 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+               class="card-img-top" 
+               alt="برمجة التطبيقات"
+               style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-2">
+              <small class="text-muted"><i class="far fa-calendar-alt me-2"></i> 10 يونيو 2025</small>
+              <small class="text-muted"><i class="fas fa-tag me-2"></i> تطبيقات الموبايل</small>
+            </div>
+            <h5 class="card-title">أفضل لغات برمجة التطبيقات</h5>
+            <p class="card-text text-muted">تعرف على اللغات الأكثر طلباً في سوق تطبيقات الهواتف.</p>
+            <a href="#" class="btn btn-sm btn-outline-success">قراءة المزيد</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- المقال 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+               class="card-img-top" 
+               alt="تجربة المستخدم"
+               style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <div class="d-flex justify-content-between mb-2">
+              <small class="text-muted"><i class="far fa-calendar-alt me-2"></i> 5 يونيو 2025</small>
+              <small class="text-muted"><i class="fas fa-tag me-2"></i> تجربة المستخدم</small>
+            </div>
+            <h5 class="card-title">أسرار تجربة المستخدم الناجحة</h5>
+            <p class="card-text text-muted">كيف تصمم تجربة مستخدم تزيد من تفاعل الزوار مع موقعك.</p>
+            <a href="#" class="btn btn-sm btn-outline-info">قراءة المزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="#" class="btn btn-primary px-4">عرض جميع المقالات</a>
+    </div>
+  </div>
+</section>
+
+  <!-- الفوتر -->
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="text-white mb-4"><i class="fas fa-code me-2"></i>Mo_Nassar</h5>
+          <p class="text-muted">نحن شريكك الموثوق في رحلة التحول الرقمي. نقدم حلولًا برمجية مبتكرة تساعد عملك على النمو والازدهار.</p>
+          <div class="social-icons mt-4">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/share/1AzK1zXKXx/?mibextid=wwXIfr" target="_blank" class="btn btn-outline-dark ms-2">
+        <i class="bi bi-facebook"></i> فيسبوك
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+               <a href="https://www.instagram.com/mo_nassar_1x?igsh=MXB2bHAwamNjMnUyeQ%3D%3D&utm_source=qr" target="_blank" class="btn btn-outline-danger ms-2">
+        <i class="bi bi-instagram"></i> إنستجرام
+      </a>
+           <a href="https://wa.me/201200902064" target="_blank" class="btn btn-outline-success ms-2">
+        <i class="bi bi-whatsapp"></i> واتساب
+      </a>
+         </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h6 class="text-white mb-4">روابط سريعة</h6>
+          <ul class="list-unstyled footer-links">
+            <li class="mb-2"><a href="index.html">الرئيسية</a></li>
+            <li class="mb-2"><a href="about.html">عن الشركة</a></li>
+            <li class="mb-2"><a href="services.html">الخدمات</a></li>
+            <li class="mb-2"><a href="portfolio.html">أعمالنا</a></li>
+            <li class="mb-2"><a href="blog.html">المدونة</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h6 class="text-white mb-4">خدماتنا</h6>
+          <ul class="list-unstyled footer-links">
+            <li class="mb-2"><a href="#">تطوير مواقع الويب</a></li>
+            <li class="mb-2"><a href="#">تطبيقات الموبايل</a></li>
+            <li class="mb-2"><a href="#">أنظمة الأعمال</a></li>
+            <li class="mb-2"><a href="#">التجارة الإلكترونية</a></li>
+            <li class="mb-2"><a href="#">استضافة المواقع</a></li>
+            <li><a href="#">الصيانة والدعم</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5 class="mb-4">تواصل معنا</h5>
+          <ul class="list-unstyled text-white-50">
+            <li class="mb-3"><i class="fas fa-map-marker-alt me-2 text-primary"></i> القاهرة، مصر</li>
+            <li class="mb-3"><i class="fas fa-phone me-2 text-primary"></i> +201200902064</li>
+            <li class="mb-3"><i class="fas fa-envelope me-2 text-primary"></i> info.mo.nassar@gmail.com</li>
+            <li><i class="fas fa-clock me-2 text-primary"></i> الأحد - الخميس: 8 ص - 5 م</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4 bg-secondary">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0 text-muted">© 2024 Mo_Nassar. جميع الحقوق محفوظة.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="mb-0 text-muted">تصميم وتطوير <a href="index.html" class="text-white">Mo_Nassar</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="btn btn-primary btn-lg back-to-top position-fixed" style="bottom: 20px; left: 20px; display: none;">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- ملف JS الخاص -->
+  <script src="js/main.js"></script>
+  
+  <script>
+    // Back to top button
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 300) {
+        $('.back-to-top').fadeIn('slow');
+      } else {
+        $('.back-to-top').fadeOut('slow');
+      }
+    });
+    
+    $('.back-to-top').click(function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop: 0}, 500);
+      return false;
+    });
+    
+    // Animation on scroll
+    $(document).ready(function() {
+      $('section').each(function() {
+        var sectionTop = $(this).offset().top;
+        var sectionHeight = $(this).outerHeight();
+        var windowHeight = $(window).height();
+        
+        $(window).scroll(function() {
+          var scrollPosition = $(this).scrollTop();
+          
+          if (scrollPosition > (sectionTop - windowHeight + sectionHeight * 0.5)) {
+            $(this).addClass('animate_animated animate_fadeInUp');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

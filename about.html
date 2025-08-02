@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="تعرف على شركة Mo_Nassar، رؤيتنا، رسالتنا، وقيمنا في عالم تطوير البرمجيات والتصميم الرقمي">
+  <title>من نحن | شركة Mo_Nassار لتطوير البرمجيات</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Bootstrap RTL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <style>
+    body {
+      font-family: 'Tajawal', sans-serif;
+      line-height: 1.8;
+    }
+    .hero-section {
+      background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+      padding: 5rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: url('images/pattern.png') repeat;
+      opacity: 0.1;
+    }
+    .section-title {
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+    }
+    .section-title::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 80px;
+      height: 3px;
+      background: #3498db;
+    }
+    .value-card {
+      border: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      height: 100%;
+    }
+    .value-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    .value-icon {
+      font-size: 2.5rem;
+      color: #3498db;
+      margin-bottom: 1rem;
+    }
+    .timeline {
+      position: relative;
+      padding: 0;
+      list-style: none;
+    }
+    .timeline:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 40px;
+      width: 2px;
+      background: #3498db;
+      margin-right: -1px;
+    }
+    .timeline > li {
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .timeline > li:before,
+    .timeline > li:after {
+      content: " ";
+      display: table;
+    }
+    .timeline > li:after {
+      clear: both;
+    }
+    .timeline > li > .timeline-panel {
+      position: relative;
+      width: calc(100% - 90px);
+      float: left;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .timeline > li > .timeline-badge {
+      position: absolute;
+      right: 15px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+      text-align: center;
+      color: #fff;
+      background: #3498db;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .team-member {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #f8f9fa;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header class="bg-dark text-white py-3 sticky-top">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="images/logo.png" alt="شعار Mo_Nassar" width="40" class="me-3">
+          <h1 class="h4 m-0">Mo_Nassar</h1>
+        </div>
+        <nav class="d-none d-md-block">
+          <a href="index.html" class="text-white me-3">الرئيسية</a>
+          <a href="services.html" class="text-white me-3">الخدمات</a>
+          <a href="portfolio.html" class="text-white me-3">أعمالنا</a>
+          <a href="about.html" class="text-white me-3 fw-bold">من نحن</a>
+          <a href="contact.html" class="text-white">تواصل معنا</a>
+        </nav>
+        <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- قائمة الجوال -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Mo_Nassar</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav class="nav flex-column">
+        <a href="index.html" class="nav-link">الرئيسية</a>
+        <a href="services.html" class="nav-link">الخدمات</a>
+        <a href="portfolio.html" class="nav-link">أعمالنا</a>
+        <a href="about.html" class="nav-link active">من نحن</a>
+        <a href="contact.html" class="nav-link">تواصل معنا</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- بانر رئيسي -->
+  <section class="hero-section text-white">
+    <div class="container position-relative">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="display-4 fw-bold mb-4">من نحن</h1>
+          <p class="lead mb-4">شركة رائدة في مجال تطوير البرمجيات والحلول الرقمية، نبتكر لنصنع الفرق</p>
+          <a href="#contact" class="btn btn-light btn-lg me-2">تواصل معنا</a>
+          <a href="#values" class="btn btn-outline-light btn-lg">قيمنا</a>
+        </div>
+        <div class="col-md-6">
+          <img src="images/about-hero.png" alt="فريق العمل" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- المحتوى الرئيسي -->
+  <main class="py-5">
+    <div class="container">
+      <!-- نبذة عن الشركة -->
+      <section class="mb-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="images/about-company.jpg" alt="عن الشركة" class="img-fluid rounded shadow">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="section-title">من نحن</h2>
+            <p class="lead">Mo_Nassar هي شركة متخصصة في تقديم حلول برمجية وتصميمات رقمية مبتكرة</p>
+            <p>
+              تأسست شركة Mo_Nassar عام 2020 بفكرة بسيطة وهي تقديم حلول تقنية عالية الجودة بأسعار تنافسية. بدأنا برحلة شغف في عالم البرمجة والتطوير، ومنذ ذلك الحين ونحن ننمو بسرعة بفضل ثقة عملائنا وتميز فريقنا.
+            </p>
+            <p>
+              نؤمن بأن التكنولوجيا يجب أن تكون في متناول الجميع، ولذلك نعمل على تبسيط المفاهيم التقنية المعقدة وتقديم حلول تلبي احتياجات السوق المحلي والعالمي.
+            </p>
+            <div class="row mt-4">
+              <div class="col-6">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="fas fa-check-circle text-primary me-2"></i>
+                  <span>فريق متخصص</span>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <i class="fas fa-check-circle text-primary me-2"></i>
+                  <span>أكثر من 150 مشروع</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="fas fa-check-circle text-primary me-2"></i>
+                  <span>عملاء في 10 دول</span>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <i class="fas fa-check-circle text-primary me-2"></i>
+                  <span>دعم فني 24/7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- رؤيتنا ورسالتنا -->
+      <section class="py-5 bg-light rounded-3 mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <div class="card h-100 border-0 bg-transparent">
+                <div class="card-body text-center">
+                  <i class="fas fa-eye value-icon"></i>
+                  <h3 class="h4">رؤيتنا</h3>
+                  <p class="mb-0">
+                    أن نكون الخيار الأول للشركات الناشئة والمنشآت الصغيرة والمتوسطة في مجال الحلول البرمجية والتقنية في المنطقة العربية، وأن نساهم في تحويل الأفكار المبتكرة إلى واقع ملموس.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 border-0 bg-transparent">
+                <div class="card-body text-center">
+                  <i class="fas fa-bullseye value-icon"></i>
+                  <h3 class="h4">رسالتنا</h3>
+                  <p class="mb-0">
+                    تقديم حلول تقنية متميزة تلبي احتياجات عملائنا بأعلى معايير الجودة، مع الحفاظ على المرونة والشفافية في التعامل. نلتزم بمساعدة عملائنا على تحقيق أهدافهم من خلال ابتكاراتنا وخبراتنا الفنية.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- قيمنا الأساسية -->
+      <section id="values" class="mb-5">
+        <h2 class="section-title text-center mb-5">قيمنا الأساسية</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card value-card">
+              <div class="card-body text-center p-4">
+                <i class="fas fa-medal value-icon"></i>
+                <h4 class="h5">الجودة</h4>
+                <p class="mb-0">نلتزم بأعلى معايير الجودة في كل مشروع ننفذه، لأن سمعتنا هي أهم ما نملك.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card value-card">
+              <div class="card-body text-center p-4">
+                <i class="fas fa-lightbulb value-icon"></i>
+                <h4 class="h5">الابتكار</h4>
+                <p class="mb-0">نبحث دائماً عن أحدث التقنيات والحلول المبتكرة لتقديم أفضل النتائج.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card value-card">
+              <div class="card-body text-center p-4">
+                <i class="fas fa-handshake value-icon"></i>
+                <h4 class="h5">الشفافية</h4>
+                <p class="mb-0">نؤمن بالشفافية الكاملة مع عملائنا في كل مراحل المشروع.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card value-card">
+              <div class="card-body text-center p-4">
+                <i class="fas fa-heart value-icon"></i>
+                <h4 class="h5">الشغف</h4>
+                <p class="mb-0">نعمل بشغف وحب لما نفعله، وهذا سر تميزنا.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- خط الزمن -->
+      <section class="mb-5">
+        <h2 class="section-title text-center mb-5">رحلة التأسيس والنمو</h2>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-badge"><i class="fas fa-rocket"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">التأسيس</h4>
+                <p><small class="text-muted"><i class="fas fa-calendar-alt me-2"></i>يناير 2020</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>بدأت الشركة كمشروع فردي بمطور واحد، مع التركيز على تطوير مواقع الويب البسيطة وتطبيقات الهاتف.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="fas fa-users"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">التوسع الأول</h4>
+                <p><small class="text-muted"><i class="fas fa-calendar-alt me-2"></i>يوليو 2021</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>انضمام أول موظفين للشركة وتوسيع نطاق العمل ليشمل تطوير أنظمة إدارة المحتوى المتقدمة.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge"><i class="fas fa-globe"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">الانتشار الإقليمي</h4>
+                <p><small class="text-muted"><i class="fas fa-calendar-alt me-2"></i>مارس 2022</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>بدء التعاون مع عملاء من دول عربية مختلفة وتنفيذ مشاريع ذات نطاق أوسع.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge"><i class="fas fa-trophy"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">التميز والاعتراف</h4>
+                <p><small class="text-muted"><i class="fas fa-calendar-alt me-2"></i>ديسمبر 2023</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>فوز الشركة بجائزة أفضل شركة ناشئة في مجال التقنية على مستوى المنطقة.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- فريق العمل -->
+      <section class="mb-5">
+        <h2 class="section-title text-center mb-5">فريقنا</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="team-member">
+              <img src="images/team1.jpg" alt="محمد النصار" class="img-fluid">
+              <h4>محمد نصار</h4>
+              <p class="text-muted">المؤسس والمدير التنفيذي</p>
+              <div class="social-icons">
+                <a href="#" class="text-primary me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-primary"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member">
+              <img src="images/team2.jpg" alt="أحمد علي" class="img-fluid">
+              <h4>أحمد علي</h4>
+              <p class="text-muted">رئيس قسم التطوير</p>
+              <div class="social-icons">
+                <a href="#" class="text-primary me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-primary"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member">
+              <img src="images/team3.jpg" alt="سارة محمد" class="img-fluid">
+              <h4>سارة محمد</h4>
+              <p class="text-muted">مديرة التصميم</p>
+              <div class="social-icons">
+                <a href="#" class="text-primary me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-primary me-2"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-primary"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- إحصائيات -->
+      <section class="py-5 bg-primary text-white rounded-3 mb-5">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-3 mb-4 mb-md-0">
+              <div class="display-4 fw-bold">150+</div>
+              <p class="mb-0">مشروع مكتمل</p>
+            </div>
+            <div class="col-md-3 mb-4 mb-md-0">
+              <div class="display-4 fw-bold">50+</div>
+              <p class="mb-0">عميل راضٍ</p>
+            </div>
+            <div class="col-md-3 mb-4 mb-md-0">
+              <div class="display-4 fw-bold">8</div>
+              <p class="mb-0">فريق عمل</p>
+            </div>
+            <div class="col-md-3">
+              <div class="display-4 fw-bold">10+</div>
+              <p class="mb-0">سنوات خبرة</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- شهادات العملاء -->
+      <section class="mb-5">
+        <h2 class="section-title text-center mb-5">كلمة عملائنا</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="d-flex mb-3">
+                  <img src="images/client1.jpg" alt="عميل" width="60" height="60" class="rounded-circle me-3">
+                  <div>
+                    <h5 class="mb-1">خالد السعدي</h5>
+                    <p class="text-muted mb-0">مدير شركة التقنية المتكاملة</p>
+                  </div>
+                </div>
+                <p class="card-text">
+                  "تعاملت مع العديد من الشركات، ولكن فريق Mo_Nassar كان مختلفاً تماماً من حيث الاحترافية والاهتمام بالتفاصيل. أنجزوا المشروع قبل الموعد المحدد وبجودة تفوق توقعاتنا."
+                </p>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="d-flex mb-3">
+                  <img src="images/client2.jpg" alt="عميل" width="60" height="60" class="rounded-circle me-3">
+                  <div>
+                    <h5 class="mb-1">نورة الفهد</h5>
+                    <p class="text-muted mb-0">مالكة متجر إلكتروني</p>
+                  </div>
+                </div>
+                <p class="card-text">
+                  "ساعدني فريق Mo_Nassar في تحويل فكرتي إلى تطبيق عملي وسهل الاستخدام. ما يميزهم هو استماعهم الجيد للاحتياجات ومتابعتهم المستمرة حتى بعد انتهاء المشروع."
+                </p>
+                <div class="text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- دعوة للعمل -->
+  <section class="py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">هل لديك فكرة لمشروعك القادم؟</h2>
+      <p class="lead mb-4">نحن هنا لمساعدتك في تحويل أفكارك إلى واقع ملموس</p>
+      <a href="contact.html" class="btn btn-primary btn-lg">تواصل معنا الآن</a>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="bg-black text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="images/logo-white.png" alt="شعار Mo_Nassar" width="120" class="mb-3">
+          <p>شركة متخصصة في تطوير البرمجيات والحلول الرقمية المبتكرة، نقدم خدماتنا لعملائنا في مختلف أنحاء العالم العربي.</p>
+          <div class="social-icons">
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h5 class="mb-4">روابط سريعة</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white-50">الرئيسية</a></li>
+            <li class="mb-2"><a href="services.html" class="text-white-50">الخدمات</a></li>
+            <li class="mb-2"><a href="portfolio.html" class="text-white-50">أعمالنا</a></li>
+            <li class="mb-2"><a href="about.html" class="text-white-50">من نحن</a></li>
+            <li><a href="contact.html" class="text-white-50">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+          <h5 class="mb-4">خدماتنا</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white-50">تطوير المواقع</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">تطبيقات الجوال</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">التجارة الإلكترونية</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">تصميم UI/UX</a></li>
+            <li><a href="#" class="text-white-50">الاستضافة والصيانة</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5 class="mb-4">تواصل معنا</h5>
+          <ul class="list-unstyled text-white-50">
+            <li class="mb-3"><i class="fas fa-map-marker-alt me-2 text-primary"></i> القاهرة، مصر</li>
+            <li class="mb-3"><i class="fas fa-phone me-2 text-primary"></i> +201200902064</li>
+            <li class="mb-3"><i class="fas fa-envelope me-2 text-primary"></i> info.mo.nassar@gmail.com</li>
+            <li><i class="fas fa-clock me-2 text-primary"></i> الأحد - الخميس: 8 ص - 5 م</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4 bg-secondary">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">&copy; 2025 Mo_Nassar. جميع الحقوق محفوظة.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="text-white-50 me-3">شروط الخدمة</a>
+          <a href="#" class="text-white-50">سياسة الخصوصية</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- الأزرار الثابتة -->
+  <div class="fixed-buttons">
+    <a href="#" class="btn btn-primary rounded-circle chat-button">
+      <i class="fas fa-comment-dots"></i>
+    </a>
+    <a href="#" class="btn btn-danger rounded-circle scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Scroll to top button
+    document.querySelector('.scroll-top').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
+    // Show scroll to top button when scrolling
+    window.addEventListener('scroll', function() {
+      const scrollTopBtn = document.querySelector('.scroll-top');
+      if (window.pageYOffset > 300) {
+        scrollTopBtn.style.opacity = '1';
+        scrollTopBtn.style.visibility = 'visible';
+      } else {
+        scrollTopBtn.style.opacity = '0';
+        scrollTopBtn.style.visibility = 'hidden';
+      }
+    });
+  </script>
+</body>
+</html>
